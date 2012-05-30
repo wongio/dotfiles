@@ -74,6 +74,15 @@ function md {
   mkdir -p "$@" && cd "$@";
 }
 
+# function update to current .zshrc
+export LOCATIONOFDOTFILEREPO="~/dotfiles"
+
+function updatezsh {
+  mv ~/.zshrc ~/zshrc.bak;
+  cp ${LOCATIONOFDOTFILEREPO}/.zshrc ~/.zshrc;
+  source ~/.zshrc
+}
+
 # zsh auto completion
 autoload -U compinit
 compinit
