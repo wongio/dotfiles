@@ -75,12 +75,17 @@ function md {
 }
 
 # function update to current .zshrc
-export LOCATIONOFDOTFILEREPO="~/dotfiles"
+export LOCATIONOFDOTFILEREPO="/Users/justinw/dotfiles"
 
 function updatezsh {
-  mv ~/.zshrc ~/zshrc.bak;
-  cp ${LOCATIONOFDOTFILEREPO}/.zshrc ~/.zshrc;
-  source ~/.zshrc
+
+  if [ -f ~/.zshrc ]; then
+      `mv ~/.zshrc ~/zshrc.bak`;
+  fi
+  
+  `cp ${LOCATIONOFDOTFILEREPO}/.zshrc ~/.zshrc`;
+  source ~/.zshrc;
+
 }
 
 # zsh auto completion
