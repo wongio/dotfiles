@@ -16,6 +16,7 @@ It's commented in the source but...features are:
 * android-sdk added to path -- ( change this to your path )
 * md [directory name] function creates directory and cd's into it.
 * grabthis [http://example.com] command downloads an entire website
+* udpatezsh function ( edit this file to update the location of the dotfiles directory)
 * TODO: gpg encryption function
 
 ## BetterTouchTool Presets
