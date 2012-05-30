@@ -1,8 +1,8 @@
 ##################################
-# Name: UNSW-CSESoc .zshrc file 
-# Email: csesoc.sysadmin@csesoc.unsw.edu.au
+# Name: .zshrc file 
+# Email: justinw@codesphere.com
 # Date Created: 23/5/2012
-# Date Modified: 24/5/2012
+# Date Modified: 30/5/2012
 # Title: .zshrc
 # Description: zsh config                                         
 ##################################
@@ -30,6 +30,10 @@ at_normal=%{$'\e[0m'%}
 # simple prompt
 export PS1="${fg_lgreen}~${fg_purple}>${at_normal} "
 
+# Android SDK export 
+# CHANGE THIS PATH
+ANDROIDSDK="/Users/justinw/android-dev/android-sdk-macosx"
+export PATH=${PATH}:${ANDROIDSDK}/tools:${ANDROIDSDK}/platform-tools
 
 # for black backgrounds ( dark blue is hard to see )
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
